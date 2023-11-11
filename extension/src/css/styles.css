@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+.asinmice-login-wrapper {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.asinmice-logged-in-wrapper {
+  position: fixed;
+  z-index: 9999;
+  width: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 20%;
+  background: radial-gradient(green, transparent);
+  color: floralwhite;
+  font-size: 20px;
+  width: 400px;
+  height: auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.asinmice-logo {
+  width: 150px;
+  height: 150px;
+  margin: 60px 0;
+  position: relative;
+}
+
+.asinmice-login-wrapper .asinmice-login-error-messages {
+  color: red;
+  font-size: 12px;
+  min-height: 25px;
+}
+
+.asinmice-error {
+  border: 1px solid red !important;
+}
+
+.asinmice-login-wrapper .asinmice-login {
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(
+      179.76deg,
+      rgba(255, 184, 0, 0.83) 34.62%,
+      rgba(0, 0, 0, 0.7304) 92.16%
+    ),
+    url("chrome-extension://__MSG_@@extension_id__/images/login_bg.png") center
+      center no-repeat;
+
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 10%;
+  margin: 0 auto;
+  padding: 20px;
+  width: 425px;
+  height: 650px;
+}
+
+.asinmice-login-wrapper .asinmice-login h1 {
+  margin-top: 48px;
+}
+
+.asinmice-login-wrapper .asinmice-login form {
+  background: #fff;
+  max-width: 360px;
+  padding: 58px 44px;
+  border: 1px solid #e1e2f0;
+  border-radius: 4px;
+  box-shadow: 0 0 5px 0 rgba(42, 45, 48, 0.12);
+  transition: all 0.3s ease;
+}
+
+.asinmice-login-wrapper .asinmice-login .asinmice-row {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.asinmice-login-wrapper .asinmice-login .asinmice-row label {
+  position: absolute;
+  top: 6px;
+  left: 55px;
+  font-size: 0.8rem;
+  color: #283252;
+  font-weight: 500;
+  z-index: 2;
+  transition: all 0.3s;
+}
+
+.asinmice-login-wrapper .asinmice-login .asinmice-row input {
+  padding-top: 14px;
+  height: 60px;
+  padding-left: 55px;
+  transition: all 0.3s;
+  border-bottom: 2px solid white;
+  background: transparent;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  box-shadow: none;
+  color: white;
+  font-size: 24px;
+}
+
+.asinmice-login-wrapper .asinmice-login .asinmice-row input:focus {
+  box-shadow: none !important;
+}
+
+.asinmice-login-wrapper .asinmice-login .asinmice-row .asinmice-input-icon {
+  display: inline-block;
+  position: absolute;
+  width: 45px;
+  top: 0;
+  left: 0;
+}
+
+.asinmice-login-wrapper .asinmice-login .asinmice-row input:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 5px 0 rgba(42, 45, 48, 0.12);
+}
+
+.asinmice-login-wrapper .asinmice-login .asinmice-row input::placeholder {
+  color: #c8cddf;
+}
+
+.asinmice-login-wrapper .asinmice-login .asinmice-login-button {
+  width: 325px;
+  border-radius: 10px;
+  background: #ffb800;
+  border-radius: 10px;
+  height: 45px;
+  padding: 0 7px;
+  position: relative;
+  vertical-align: top;
+  font-family: arial;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.asinmice-login-wrapper .asinmice-login .asinmice-login-button:hover {
+  opacity: 0.8;
+}
+
+.asinmice-login-wrapper .asinmice-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.asinmice-login-wrapper .asinmice-register {
+  font-size: 18px;
+  color: white;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.asinmice-login-wrapper .asinmice-register:hover {
+  text-decoration: underline;
+}
+
+.asinmice-sellabale-cell {
+  color: green;
+}
+
+.asinmice-not-sellabale-cell {
+  color: red;
+}
+
+.asinmice-filter-block {
+  min-width: 110px;
+}
+
+.asinmice-filter-block input {
+  float: left;
+  margin-right: 5px;
+}
+
+.asinmice-table-filter-section {
+  display: flex;
+  align-items: end;
+  flex-direction: row;
+}
+
+.asinmice-seller-central-popup {
+  position: fixed;
+  width: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.8);
+  color: white;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  z-index: 10;
+}
+
+.asinmice-seller-central-popup h3 {
+  text-align: center;
+  font-size: 18px;
+  margin: 25px 0px;
+}
+.asinmice-seller-central-popup .asinmice-got-to-seller-central-button {
+  background: #ffb800;
+  color: black;
+}
+
+.asinmice-seller-central-popup .asinmice-got-to-seller-central-button a {
+  color: black;
+  text-decoration: none;
+}
+
+.asinmice-seller-central-popup .asinmice-got-to-seller-central-button:hover,
+.asinmice-seller-central-popup .asinmice-got-to-seller-central-button:focus{
+  background: #d5c376;
+}
+
+.asinmice-seller-central-popup .asinmice-seller-central-logo {
+  margin-top: 25px;
+}
+
+.asinmice-seller-central-popup .asinmice-seller-central-logo-img {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.asinmice-seller-central-popup .asinmice-got-to-seller-central-button{
+  padding: 5px;
+  border-radius: 25px;
+  width: 100%;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.asinmice-seller-central-popup .asinmice-seller-central-popup-close {
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 458px) {
+  .asinmice-login-wrapper .asinmice-login {
+    margin: 0 18px;
+  }
+
+  .asinmice-login-wrapper .asinmice-login form {
+    background: #f9faff;
+    border: none;
+    box-shadow: none;
+    padding: 20px 0;
+  }
+}

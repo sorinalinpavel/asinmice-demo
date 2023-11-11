@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:400,700");
+:root {
+  --primary-color: #ffb800;
+}
+
+.asinmice-settings-page {
+  width: 350px;
+  height: 80%;
+  position: fixed;
+  background: white;
+  top: 0;
+  right: 0;
+  color: white;
+  z-index: 99999;
+  background: #191919;
+}
+
+.asinmice-settings-page button,
+.asinmice-settings-page input,
+.asinmice-settings-page select,
+.asinmice-settings-page textarea {
+  font-family: inherit;
+}
+.asinmice-settings-page button:focus,
+.asinmice-settings-page button:active,
+.asinmice-settings-page input:focus,
+.asinmice-settings-page input:active,
+.asinmice-settings-page select:focus,
+.asinmice-settings-page select:active,
+.asinmice-settings-page textarea:focus,
+.asinmice-settings-page textarea:active {
+  outline: 0;
+}
+
+.asinmice-settings-page h1 {
+  margin: 0;
+}
+
+.asinmice-settings-page h3 {
+  margin: 4rem 0 3rem;
+}
+
+.asinmice-settings-page p {
+  margin-bottom: 2rem;
+}
+
+.asinmice-settings-page .wrapper {
+  margin: 4.5rem 1rem 0;
+}
+
+.asinmice-settings-page .card {
+}
+.asinmice-settings-page .card__header {
+  padding: 15px 10px 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+  float: right;
+}
+
+@media screen and (max-width: 900px) {
+  .asinmice-settings-page .card__body {
+    padding: 5rem 2rem 7rem;
+  }
+}
+
+.asinmice-settings-page .toolbar__item {
+  box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.asinmice-settings-page .toolbar__item:not(:last-of-type) {
+  margin-right: 0.5rem;
+}
+.asinmice-settings-page .toolbar__item:hover,
+.asinmice-settings-page .toolbar__item:focus {
+  transform: scale(1.1);
+  box-shadow: inset 0px 0px 3px rgba(255, 255, 255, 0.1);
+  transition: all 300ms ease;
+}
+.asinmice-settings-page .toolbar__item--close {
+  background: #ea6759;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+}
+.asinmice-settings-page .toolbar__item--min {
+  background: #ffcc00;
+}
+.asinmice-settings-page .toolbar__item--max {
+  background: #2dcc72;
+}
+
+.asinmice-settings-page .container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0 20px 0 5px;
+}
+@media screen and (max-width: 900px) {
+  .asinmice-settings-page .container {
+    flex-direction: column;
+  }
+}
+
+.asinmice-settings-page .grid {
+  flex: 1;
+  padding: 0 20px;
+  position: relative;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 900px) {
+  .asinmice-settings-page .grid {
+    max-width: 100%;
+  }
+}
+
+.asinmice-settings-page .toggle {
+  max-width: 62px;
+  height: 25px;
+  background: white;
+  border-radius: 999px;
+  position: relative;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+.asinmice-settings-page .toggle__handle {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  background: #d89c00;
+  border-radius: 50%;
+  transition: all 300ms ease;
+}
+.asinmice-settings-page .toggle.is-on {
+  background: #d89c00;
+  transition: all 300ms ease;
+}
+.asinmice-settings-page .toggle.is-on .toggle__handle {
+  left: 34px;
+  background: white;
+  transition: all 300ms ease;
+}
+
+.asinmice-settings-page .form-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+.asinmice-settings-page .form-item__control {
+  width: 40%;
+  text-align: right;
+}
+
+.asinmice-settings-page .control {
+  background: transparent;
+  color: inherit;
+  display: block;
+  width: 100%;
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.asinmice-settings-page .control:hover,
+.asinmice-settings-page .control:focus {
+  background: #d5c376;
+  border-color: transparent;
+}
+.asinmice-settings-page .radio {
+  display: inline-block;
+}
+.asinmice-settings-page .radio__item {
+  display: inline-block;
+  color: #d5c376;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.asinmice-settings-page .radio__item:not(:last-of-type) {
+  margin-right: 1rem;
+}
+.asinmice-settings-page .radio__item.is-active {
+  color: white;
+  transition: all 300ms ease;
+}
+
+.asinmice-settings-page .u-text--small {
+  font-size: 1.3rem;
+}
+
+.asinmice-settings-page .u-text--normal {
+  font-size: 1.6rem;
+}
+
+.asinmice-settings-page .u-text--large {
+  font-size: 2.2rem;
+}
+
+.asinmice-settings-page .slider {
+  width: 100%;
+  position: relative;
+}
+.asinmice-settings-page .slider__positive {
+  width: 100%;
+  height: 5px;
+  background: white;
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.asinmice-settings-page .slider__input {
+  margin-top: 1rem;
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  background: #d5c376;
+  outline: none;
+  transition: all 300ms ease;
+}
+.asinmice-settings-page .slider__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 4px solid white;
+  background: white;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.asinmice-settings-page .slider__input::-webkit-slider-thumb:focus,
+.asinmice-settings-page .slider__input::-webkit-slider-thumb:active {
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.asinmice-settings-page .button {
+  border: 0;
+  background: white;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  padding: 0.6rem 1.4rem;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.asinmice-settings-page .button:hover,
+.asinmice-settings-page .button:focus {
+  background: #d5c376;
+  color: white;
+  transition: all 300ms ease;
+}
+
+.asinmice-settings-page .buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-top: 3rem;
+}
+.asinmice-settings-page .buttons .button {
+  margin-left: 1rem;
+}
+
+.asinmice-settings-page .credits {
+  position: fixed;
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
+  bottom: 0;
+  padding: 0 1.5rem;
+}
+
+.asinmice-settings-page .link--dribbble {
+  color: #ea4c89;
+}
+
+.asinmice-actions-apply-settings {
+  background-color: #00bb07;
+  border-color: transparent;
+  color: #fff;
+  width: 110px;
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 18px;
+}
+
+.asinmice-actions-apply-settings:hover,
+.asinmice-actions-apply-settings:active {
+  background-color: #49fc97;
+}
+
+.asinmice-actions-section {
+  text-align: center;
+  position: absolute;
+  bottom: 50px;
+  left: 120px;
+}
+
+.asinmice-settings-logo {
+  width: 30px;
+}

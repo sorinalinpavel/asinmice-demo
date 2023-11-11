@@ -1,0 +1,453 @@
+:root {
+  --primary-color: #ffb800;
+}
+
+.asinmice-d-flex {
+  display: flex;
+}
+
+.asinmice-spinner-wrapper {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  vertical-align: middle;
+}
+.asinmice-circle {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  animation: rotate 2.5s linear infinite;
+}
+
+.asinmice-login-loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.asinmice-seller-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.asinmice-d-none {
+  display: none !important;
+}
+
+.asinmice-circle1 {
+  box-shadow: 0px 2px 2px 1px #2db889, 0px -2px 2px 1px #ff0000,
+    -2px 0px 2px 1px #d47dee, 2px 0px 2px 1px #b94fbd;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.s-result-item {
+  position: relative;
+}
+
+.asinmice-wrapper {
+  max-width: 270px;
+  background: white;
+}
+
+.asinmice-product-details {
+  display: inline-flex;
+  align-items: center;
+}
+
+.asinmice-product-details:first-child {
+  margin-bottom: 5px;
+}
+
+.asinmice-product-details,
+.asinmice-sellable-p,
+.asinmice-limitations-p,
+.asinmice-hazmat-wrapper {
+  text-align: left;
+}
+
+.asinmice-sellable-p ul,
+.asinmice-limitations-p ul {
+  margin: 0;
+  text-align: center;
+}
+
+.asinmice-wrapper ul li {
+  list-style-type: none;
+}
+
+.asinmice-wrapper.asinmice-loading {
+  border-radius: 8px;
+  border: 1px solid #d5d9d9;
+  padding: 18px 14px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  height: 90px;
+  border-bottom: 10px solid #ffb800;
+}
+
+.asinmice-bold {
+  font-weight: bold;
+}
+
+.asinmice-asin-value {
+  cursor: pointer;
+}
+
+.asinmice-seller-info {
+  display: inline-flex;
+}
+
+.asinmice-copied-to-clipboard {
+  color: #2db889;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.asinmice-copy {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.asinmice-add-item-to-platform {
+  font-size: 20px;
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px 0 0 6px;
+  color: black;
+  cursor: pointer;
+  border: 2px solid black;
+  padding: 0px;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.asinmice-add-item-to-platform-from-table button {
+  font-size: 20px;
+  margin: 1px 0 0 6px;
+  color: rgb(247, 202, 0);
+  cursor: pointer;
+  border: 1px solid rgb(247, 202, 0);
+  border-radius: 20px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background: white;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.asinmice-padding-top-bottom-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.asinmice-f-size-12 {
+  font-size: 12px;
+}
+
+.asinmice-star {
+  width: auto;
+  font-size: 16px;
+}
+
+.asinmice-yes {
+  background-color: #135a42;
+  height: 30px;
+  padding: 5px;
+  font-size: 12px;
+  margin-left: 10px;
+  border-radius: 100px;
+  color: white;
+}
+
+.asinmice-no {
+  background-color: #a51818;
+  height: 30px;
+  padding: 5px;
+  font-size: 12px;
+  margin-left: 10px;
+  border-radius: 100px;
+  color: white;
+}
+
+.asinmice-throttling {
+  background-color: #a4a72c;
+  height: 50px;
+  padding: 5px;
+  font-size: 16px;
+  margin-left: 15px;
+  border-radius: 100px;
+  color: white;
+}
+
+.asinmice-availability-card {
+  text-align: left;
+  border-radius: 8px;
+  border: 1px solid #d5d9d9;
+  padding: 10px 15px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  height: 90px;
+  position: relative;
+  overflow: hidden;
+  transition: 1.5s;
+  border-bottom: 10px solid #ffb800;
+}
+
+.asinmice-availability-card.asinmice-expanded {
+  height: auto;
+}
+
+.asinmice-negative-availability-card {
+  border-radius: 8px;
+  border: 1px solid #d5d9d9;
+  padding: 10px 15px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  height: 90px;
+  border-bottom: 10px solid #ffb800;
+  margin-bottom: 20px;
+}
+
+.asinmice-show-reuslts-button-throttling {
+  background-color: #f7ca00;
+  font-size: 12px;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #0f1111;
+}
+
+.asinmice-show-reuslts-button {
+  width: 20px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.asinmice-unknown-card {
+  border-radius: 8px;
+  border: 1px solid #d5d9d9;
+  padding: 18px 14px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  height: 90px;
+  border-bottom: 10px solid #ffb800;
+}
+
+.asinmice-unknown-message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 30px;
+  justify-content: center;
+}
+
+.asinmice-unknown-message img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.asinmice-throttling-card {
+  border-radius: 8px;
+  border: 1px solid #d5d9d9;
+  padding: 18px 14px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.asinmice-warning-sign {
+  position: relative;
+  border-left: 0.8em solid transparent;
+  border-right: 0.8em solid transparent;
+  border-bottom: 1.5em solid yellow;
+  top: -1.2em;
+  margin-right: 10px;
+}
+.asinmice-warning-sign::before {
+  content: "⚠";
+  top: 0.45em;
+  left: -0.45em;
+  position: absolute;
+  color: black;
+  font-size: 2em;
+  line-height: 1em;
+}
+.asinmice-hazmat-wrapper {
+  margin: 15px 0;
+}
+.asinmice-hazmat-yes {
+  font-size: 20px;
+  margin: 15px 0;
+  color: red;
+}
+.asinmice-hazmat-not {
+  color: green;
+  font-size: 20px;
+}
+
+.asinmice-tick {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: gray;
+  margin-right: 10px;
+}
+.asinmice-tick:before,
+.asinmice-tick:after {
+  background: white;
+  position: absolute;
+  content: " ";
+  left: 30%;
+  right: 30%;
+  top: 50%;
+  height: 2px;
+  bottom: auto;
+}
+.asinmice-tick-success {
+  background: green;
+  transform: rotate(45deg);
+  top: 0.6em;
+}
+.asinmice-tick-success:after {
+  height: 2px;
+  bottom: 25%;
+  left: 30%;
+  right: 45%;
+  top: auto;
+}
+.asinmice-tick-success:before {
+  width: 2px;
+  height: auto;
+  bottom: 25%;
+  top: 20%;
+  left: 55%;
+  right: auto;
+}
+.asinmice-sellable-p {
+  color: green;
+}
+
+.asinmice-limitations-p {
+  color: #fa8900;
+}
+.asinmice-check-monthly-sales {
+  width: 20px;
+  font-size: 12px;
+  margin: 0 0 0 5px;
+}
+.asinmice-monthly-sales-value {
+  width: 80px;
+  float: right;
+  top: -10px;
+  position: relative;
+  cursor: pointer;
+  font-size: 12px;
+}
+.asinmice-monthly-check-value {
+  margin-top: 35px;
+  position: relative;
+  top: 20px;
+}
+
+#asinmice-toast-message {
+  display: none;
+  width: 500px;
+  line-height: 20px;
+  margin-left: -125px;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  font-family: monospace;
+}
+#asinmice-toast-message span {
+  margin-left: 12px;
+  margin-top: 2px;
+}
+
+#asinmice-toast-message.show {
+  display: inline-flex;
+}
+
+#asinmice-toast-message {
+  z-index: 999999;
+}
+
+#asinmice-toast-message .asinmice-toast-message-text {
+  width: 100%;
+}
+
+.s-list-col-right .asinmice-wrapper {
+  position: relative;
+  right: 80px;
+  min-width: 250px;
+  float: right;
+}
+
+@keyframes dotPulseBefore {
+  0% {
+    box-shadow: 9984px 0 0 -5px #2db889;
+  }
+  30% {
+    box-shadow: 9984px 0 0 2px #2db889;
+  }
+  60%,
+  100% {
+    box-shadow: 9984px 0 0 -5px #2db889;
+  }
+}
+
+@keyframes dotPulse {
+  0% {
+    box-shadow: 9999px 0 0 -5px #2db889;
+  }
+  30% {
+    box-shadow: 9999px 0 0 2px #2db889;
+  }
+  60%,
+  100% {
+    box-shadow: 9999px 0 0 -5px #2db889;
+  }
+}
+
+@keyframes dotPulseAfter {
+  0% {
+    box-shadow: 10014px 0 0 -5px #2db889;
+  }
+  30% {
+    box-shadow: 10014px 0 0 2px #2db889;
+  }
+  60%,
+  100% {
+    box-shadow: 10014px 0 0 -5px #2db889;
+  }
+}
